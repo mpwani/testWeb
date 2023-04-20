@@ -4,45 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <link rel="stylesheet" href="style.css">
+    <title>query selector</title>
 </head>
-<body>
-    <div class="head-web">
-        <h2>WALL-E</h2>
-    </div>
-    <div>
-        <p>Walt Disney Studio Motion Picture | Release date :jun 27 ,2008</p>
-    </div>
-    <div class="data-list">
-        <ol>
-            <li>Summary</li>
-            <li>Critic Review </li>
-            <li>User Reliese</li>
-            <li>Details and credit </li>
-            <li>Trailers and video</li>
-        </ol>
-    </div>
-    <div class="container">
-        <div class="image-left">
-            <img src="images.jpg" alt="" srcset="">
-        </div>
-        <div class="image-number">
-            <img src="images2.jpg" alt="" srcset="">
-           
 
-        </div>
-        <div class="data">
-            <h1>Metascore</h1>
-            <p>Universal acclain</p>
-            <p>based on39 critices</p>
-        <ul>
-            <li>
-                Sring:Ben Butter Ellisa Kniffejeff calim
-            </li>
-            <li>Suumary:After hundres of loney year of doind what wase built for wall e discover a new purpose inlife when he meet </li>
-        </ul>
-        </div>
+<body>
+    <div >
+        <img src="images.jpg" alt="" srcset="">
+        <img src="images2.jpg" alt="" srcset="">
+     
     </div>
+    <p >mpwani</p>
+
+
+    <script>
+        function getema(){
+       let images =  document.querySelectorAll('img');
+         var url = [];
+         for(let i = 0;i<images.length;i++){
+             url.push(images[i].src);
+         }
+     return url;
+      
+         window.addEventListener('load',function(){
+             console.log(getema());
+         })
+     
+        }
+        document.querySelector("p").style.color="red";
+     
+     </script>
 </body>
 </html>
